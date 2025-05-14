@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #620060;
+  background-color: #000f62;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ h1 {
 nav {
   display: none;
   flex-direction: column;
-  background-color: #620060;
+  background-color: #244a9c;
 }
 
 nav.open {
@@ -77,6 +77,6 @@ footer {
   background-color: #620060;
   color: white;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 5rem;
+  font-size: 10.9rem;
 }

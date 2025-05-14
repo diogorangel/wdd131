@@ -1,14 +1,23 @@
-// Footer dynamic info
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+// Date copyright
+const yearSpan = document.getElementById("year");
+const modified = document.getElementById("lastModified");
 
-// Hamburger toggle
-const menuBtn = document.getElementById("menu");
-const nav = document.getElementById("navMenu");
+yearSpan.textContent = new Date().getFullYear();
+modified.textContent = `Last Modification: ${document.lastModified}`;
 
-menuBtn.addEventListener("click", () => {
-  nav.classList.toggle("open");
-  menuBtn.textContent = nav.classList.contains("open") ? '✖' : '☰';
+// Hamburger menu
+const menuButton = document.getElementById("menu");
+const navMenu = document.getElementById("navMenu");
+
+menuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  menuButton.textContent = navMenu.classList.contains("open") ? '✖' : '☰';
 });
 
-  
+document.getElementById("menu").addEventListener("click", () => {
+  document.querySelector(".navigation").classList.toggle("show");
+
+  // Alterna ícone entre ☰ e ✖
+  const icon = document.getElementById("menu");
+  icon.textContent = icon.textContent === "☰" ? "✖" : "☰";
+});

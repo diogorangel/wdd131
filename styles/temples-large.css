@@ -1,6 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: white;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: 'Mooli', sans-serif;
+
+
+a {
+  color: #FFF;
+}
+
 #menu {
   display: none;
 }
+
 
 nav {
   display: flex !important;
@@ -8,57 +25,185 @@ nav {
   gap: 1rem;
 }
 
-
-
-grid-container {
-  display:grid; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  grid-gap: 25px;place-items: center;
-  font-weight: 100;
-  border-bottom: 1px solid #777; 
-  margin-bottom: 1rem;
-}
-
 figcaption {
   font-size: larger;
 }
 
-grid-item{
-  background: #fff;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 7px;
-	mix-blend-mode: lighten; /* try darken and overlay */
-	position: absolute;
-	top: 0;
-	width: 100%;
+header {
+  background-color: #51489c;
+  color: beige;
+  padding: 0;
+  margin: 7;
+  flex: 5; /* ocupa espaço proporcional */
+}
 }
 
-figure {
-  background-color:#fff;
+body {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  background-color: #EBEBEE;
 }
 
+h1 {
+  text-align: center;
+}
 
-main { 
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem; 
+}
+footer{
+    background-color: #51489c;
+    color: white;
+}
+img{
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: 10px solid white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    justify-items: center;
+    place-items: center;
+}
+
+main {
   max-width: 800px;
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 2.5rem; 
-  padding: 1rem;
-  background-color: #333;
-  text-align: center;
-  font-family: 'Acme', Arial, sans-serif; 
-  color:#fff;
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
 }
 
-h2 {
-  font-size: 2rem;
-  padding: 1rem;
-  text-align: center;
+.viewer img {
+    max-height: 80%;
+    max-width: 80%;
+    background-color:  rgba(0, 0, 0, 0.75);
+    border: 10px solid; 
+    padding: 25px;
+    background-color: white;
 }
 
-.hover:hover {
-  box-shadow: 0 0 50px #333;
+.viewer .close-viewer {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
+
+
+@media screen and (min-width: 700px) {
+  .gallery{
+      grid-template-columns: 1fr 1fr;
+  }
+  #menu-button{
+      display: table; 
+    } 
+    .viewer img {
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+      max-height: 100%;
+      max-width: min(100%, 800px);
+      background-color:  rgba(0, 0, 0, 0.55);
+      border: none;
+      }
+   
+   
+}
+@media screen and (max-width: 700px){
+  header nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+  }
+  header nav ul.hide {
+      display: none;
+  }
+  header nav ul:not(.hide) {
+      display: flex;
+  }
+  .viewer img {
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+      max-height: 100%;
+      max-width: min(100%, 800px);
+      background-color: transparent;
+      border: none;
+      padding: 25px;
+      }
+        
+}
+
+
+@media  screen and (min-width: 1000px ) {
+  
+  .gallery{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  #menu-button{
+      display: none; 
+    }
+    .viewer {
+      padding: 20px;
+  }
+  .viewer img {
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  max-height: 100%;
+  max-width: min(100%, 800px);
+  background-color:  rgba(0, 0, 0, 0.55);
+  border: none;
+    }
+    
+  
+  }
+  @media screen and (min-width: 768px) {
+    #menu {
+      display: none;
+    }
+  
+    .navigation {
+      display: flex !important;
+      flex-direction: row;
+      flex: 9; 
+      justify-content: space-evenly; 
+      width: auto;
+    }
+  
+    header {
+      flex-wrap: nowrap;
+    }
+  }
+  
