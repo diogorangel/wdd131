@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temple Album Page - Diogo Rangel Dos Santos - Responsive Layout.">
+  <meta name="author" content="Diogo Rangel Dos Santos">
+  <title>WDD 131 Dynamic Web Fundamentals - Diogo Rangel Dos Santos</title>
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album - <span class="highlight">Diogo Rangel Dos Santos</span></h1>
+    <button id="menu">&#9776;</button>
+    <nav id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Home</h2>
+    <div class="grid-container">
+      <!-- Repeat this figure 9 times -->
+      <figure>
+        <img src="images/rome_italy_temple.jpeg" alt="Rome Italy Temple">
+        <figcaption>Rome Italy</figcaption>
+        <img src="images/salt_lake_temple_christmas.jpeg" alt="Salt Lake Temple">
+        <figcaption>Salt Lake Temple</figcaption>
+        <img src="images/brasilia_brazil_temple_exterior.jpeg" alt="Brasilia Brazil Temple">
+        <figcaption>Brasilia Brazil Temple</figcaption>
+        <img src="images/sao_paulo_brazil_temple_lds.jpeg" alt="São Paulo Brazil Temple">
+        <figcaption>São Paulo Brazil Temple</figcaption>
+        <img src="images/bangkok_thailand_temple_exteriors.jpeg" alt="Bangkok Thailand Temple">
+        <figcaption>Bangkok Thailand Temple</figcaption>
+        <img src="images/casper_wyoming_temple_exteriors.jpeg" alt="Casper Wyoming Temple">
+        <figcaption>Casper Wyoming Temple</figcaption>
+        <img src="images/boston_temple_lds.jpeg" alt="Boston Temple Later Day Saints">
+        <figcaption>Boston Temple Later Day Saints</figcaption>
+        <img src="images/chicago_temple_lds.jpeg" alt="Chicago Temple Latter Day Saints">
+        <figcaption>Chicago Temple Latter Day Saints</figcaption>
+        <img src="images/brisbane_australia_temple_lds.jpeg" alt="Brisbane Australia Temple">
+        <figcaption>Brisbane Australia Temple</figcaption>
+      </figure>
+      <!-- Repeat ends -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Diogo Rangel Dos Santos🌍 Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
