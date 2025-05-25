@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Page : Brazil</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Brazil</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+        <picture class="hero-picture">
+            <source srcset="images/arara-canindé.jpg" media="(min-width: 300px)">
+            <img src="images/arara-canindé.jpg" alt="Arara in Brazil">
+        </picture>
+    </section>
+
+
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <ul><strong>Area:</strong> 8,515,767 sq km</ul>
+        <ul><strong>Population:</strong> 203,000,000</ul>
+        <ul><strong>Capital:</strong> Brasília</ul>
+        <ul><strong>Languages:</strong> Portuguese</ul>
+        <ul><strong>Currency:</strong> Brazilian Real (BRL,R$)</ul>
+        <ul><strong>Time Zone:</strong> UTC-3</ul>
+        <ul><strong>Calulng Code:</strong> +55</ul>
+        <ul><strong>Internet TLD:</strong> .br</ul>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <img src="images/PartyCloud.png" alt="Partly Cloudy Icon">
+      <ul>
+        <ul><strong>Temperature:</strong> <span id="temperature">26ª</span> °C</ul>
+        <ul><strong>Conditions:</strong> Partly Cloudy</ul>
+        <ul><strong>Wind:</strong> <span id="wind">12km/h</span> km/h</ul>
+        <ul><strong>Wind Chill:</strong> <span id="windchill">Calculating...</span></ul>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> Diogo Rangel Dos Santos🌍 Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
