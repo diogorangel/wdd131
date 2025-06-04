@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6; /* Improved readability */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px; /* Space between title and nav */
+}
+
+nav {
+    margin-top: 10px;
+    display: flex; /* Use flexbox for navigation links */
+    flex-wrap: wrap; /* Allow links to wrap to the next line */
+    justify-content: center; /* Center the navigation links */
+    gap: 10px; /* Space between navigation links */
+    padding: 0 10px; /* Add some padding on the sides for smaller screens */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevent links from shrinking too much */
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+#temple-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+}
+
+.temple-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex; /* Use flexbox for internal card layout */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Distribute space vertically */
+}
+
+.temple-card h2 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.5em; /* Slightly larger for better readability */
+}
+
+.temple-card p {
+    color: #666;
+    font-size: 0.95em; /* Slightly larger font size */
+    margin-bottom: 5px; /* Space between paragraphs */
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: auto; /* Push image to the bottom if content above is short */
+    display: block; /* Remove extra space below image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+    font-size: 0.9em; /* Smaller font for footer */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* For tablets and smaller desktops */
+    nav a {
+        padding: 0.4rem 0.8rem; /* Slightly smaller padding for nav links */
+        font-size: 0.9em;
+    }
+
+    #temple-cards-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 0 10px; /* Add horizontal padding for phone screens */
+    }
+
+    .temple-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For most mobile phones */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center stacked links */
+    }
+
+    nav a {
+        width: 80%; /* Make links take more width */
+        text-align: center;
+        margin: 5px 0; /* Add vertical margin */
+        padding: 0.6rem 1rem; /* Slightly larger padding for better touch targets */
+    }
+
+    main {
+        padding: 10px;
+    }
+}
