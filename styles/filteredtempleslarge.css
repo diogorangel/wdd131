@@ -44,8 +44,8 @@ main {
 }
 
 .temple-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: rgb(157, 196, 125);
+    border: 1px solid #2bc54d;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;

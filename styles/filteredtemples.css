@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #0a61c5;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -32,14 +32,14 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border: 1px solid #555;
+    border: 1px solid #1941c5;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     flex-shrink: 0; /* Prevent links from shrinking too much */
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #12148d;
 }
 
 main {
@@ -54,8 +54,8 @@ main {
 }
 
 .temple-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: rgb(165, 197, 114);
+    border: 1px solid #24974a;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
